@@ -3,7 +3,7 @@ const BASE_URL = "https://api.themoviedb.org/3"
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p"
 
 export const fetchFromTMDB = async (endpoint: string) => {
-  const response = await fetch(`${BASE_URL}${endpoint}?api_key=db75be3f6da59e6c54d0b9f568d19d16`)
+  const response = await fetch(`${BASE_URL}${endpoint}?api_key=${process.env.TMDB_API_KEY}`)
   return response.json()
 }
 
