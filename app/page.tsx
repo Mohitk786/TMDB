@@ -1,6 +1,4 @@
-import { Suspense } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MovieSlider } from "@/components/movie-slider";
 import { GenreCard } from "@/components/genre-card";
