@@ -48,12 +48,7 @@ module.exports = {
         //This is from the original config file.  Keeping it here for now.
         FF0000: "#FF0000",
         "#141414": "#141414",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
