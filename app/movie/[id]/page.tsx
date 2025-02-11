@@ -24,7 +24,7 @@ const page = async ({ params }: { params: { id: string } }) => {
         <MovieHighLights movie={movie} />
       </div>
 
-      <div className="w-[90%] justify-around flex flex-col   text-white md:flex-row">
+      <div className="w-[90%] justify-around flex flex-col items-center md:items-start  text-white md:flex-row">
         <MovieDetails movie={movie} />
         <MovieSpecs movie={movie} />
       </div>

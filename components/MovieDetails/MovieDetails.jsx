@@ -4,8 +4,8 @@ import { Play } from "lucide-react";
 
 const MovieDetails = ({ movie }) => {
   return (
-    <div className="w-[55%]  flex flex-col items-start gap-8">
-      <div className="p-7 flex flex-col gap-2 border border-[#262626] bg-[#1A1A1A] text-gray-400">
+    <div className="w-[55%] items-center flex flex-col md:items-start gap-8">
+      <div className="p-7 flex  flex-col gap-2 border border-[#262626] bg-[#1A1A1A] text-gray-400">
         <p>Description</p>
         <p className="text-white">{movie.overview}</p>
       </div>
@@ -36,8 +36,9 @@ const MovieDetails = ({ movie }) => {
       <div className="p-7 w-full  flex flex-col gap-2 border border-[#262626] bg-[#1A1A1A] text-gray-400">
         <p>Extras</p>
 
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row md:justify-between items-center">
           <div className="flex w-[80%]  justify-evenly">
+            
             <div className="flex flex-col items-center gap-2">
               <p className="font-semibold">User Score</p>
               <span className="text-yellow-600 flex items-center">
